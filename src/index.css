@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --soft-bg: #fdfbf7;
+  /* Warm off-white */
+  --soft-text: #2d3748;
+  --soft-blue: #e0f2fe;
+  --soft-purple: #f3e8ff;
+  --soft-pink: #fce7f3;
+  --accent-gradient: linear-gradient(135deg, #a78bfa 0%, #f472b6 100%);
+
+  /* Syntax Highlighting Colors */
+  --keyword: #FF5D7D; /* Vibrant Pink/Rose */
+  --type: #B084F9;    /* Purple */
+  --string: #059669;  /* Emerald (emerald-600 for contrast) */
+  --fn: #0284c7;      /* Sky (sky-600 for contrast) */
+}
+
+.syntax-keyword { color: var(--keyword); font-weight: 700; }
+.syntax-type { color: var(--type); font-weight: 700; }
+.syntax-string { color: var(--string); font-weight: 700; }
+.syntax-fn { color: var(--fn); font-weight: 700; }
+
+body {
+  background-color: var(--soft-bg);
+  color: var(--soft-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.font-calligraphy {
+  font-family: 'Great Vibes', cursive;
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Custom Scrollbar for a cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
