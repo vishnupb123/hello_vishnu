@@ -4,7 +4,7 @@ import saleem from "../assets/saleem.jpeg"
 import aswin from "../assets/Aswinjith.jpeg"
 import aswin2 from "../assets/Aswin.png"
 import adarsh from "../assets/Adarsh.jpeg"
-import najmudheen from "../assets/najmudheen.jpeg"
+import najmudheen from "../assets/Najmudheen.jpeg"
 
 const testimonials = [
     {
